@@ -25,7 +25,8 @@ fi
 
 source ~/.profile
 
-repo init -u git://github.com/crdroidandroid/android.git -b 11.0 
+repo init -u git://github.com/crdroidandroid/android.git -b 11.0 --partial-clone --clone-filter=blob:limit=10M
+
 
 repo sync -j24
 
